@@ -1,0 +1,14 @@
+As we can see we got no hints and in the website we can do nothing – so all we can do right now – check source code
+
+Here we can see our hint as a file name in which we may have our CTF flag and also we can see that we need to try to find path to it (by default sensitive data is in …/etc/passwd, so we will try to find it there)
+
+URL:[link]/local?image_name=../../../etc/passwd
+
+Okay, something is blocking us, but still now we now that we are on the right way. Let’s try to overcome a firewall that restricts a permission by using ‘//’
+
+Okay, as soon as we entered with such URL something was downloaded on PC, let’s check it
+
+Okay, it’s not our CTF flag – now let’s look at the hint that we got and it says that our flag is in temporary folder
+Let’s check a temporary folder
+
+URL:[link]/local?image_name=..//..//..//tmp/flag

@@ -1,0 +1,33 @@
+So all we know right now is that this website is in process of construction, so let’s go with the flow
+
+So now we can see that we got own ID and that we are user, so let’s click on an user button 
+
+Okay, now we know that we got an admin role here, so let’s try to get it. Firstly let’s check, on what language is written this website
+
+JS. So now as we know that it is written in JS, we know that we can make some changes in this website, but those changes will be local, not global, but still we will get an access to data that got only admins, even if our admin role will be local. And all local changes may be made inside Application memory
+
+Now we see that here we got user role (role) and we got our own token (token…), so I believe, if we want to get admin role – we need to change our role correctly and also change our token to admins.
+Let’s start with changing role, where we can get info about admin role? Of course, in websites code, so let’s take a look at JS folder. After we can write ctrl+f and input ‘admin’ so we will find everything 
+
+We found a name for admin role! Now we can change it
+ 
+Let’s update website okay
+
+We got such mistake because we are not a user anymore, so we need to get back to main page and check if something has changed
+ 
+We got an admin board
+ 
+It’s because our token isn’t correct for admin role so let’s change it
+To do that we firstly need to find out a passphrase and it can be done in kali linux with JWT_Tool
+ 
+I downloaded this command from github and now I need to start py file
+python3 jwt_tool.py -t [link]/user -rc '[token] -C -d rockyou.txt
+
+I used such command:
+1)	-t = target URL
+2)	-rc = cookies (I inputted there my own token)
+3)	-C = crack
+4)	-d = dictionary with list of passwords
+So now all we need to do s to go to website and change our token there
+
+jwt.io

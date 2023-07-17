@@ -1,0 +1,8 @@
+This is what we got in our website 
+We can see that if we will send a ‘start’ we will get something in ‘__file__’
+And to do it we can use curl command in kali linux
+Curl – is an utility that allows us transfer data to or from server remotely
+
+curl '[link]/?start=' --data 'start=flag.php'
+
+So here we send them data with start parameter, because we got written(photo), so we gave it to them and afterwards we ask to send us data that starts with flag.php

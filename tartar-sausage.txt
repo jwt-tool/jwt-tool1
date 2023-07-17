@@ -1,0 +1,15 @@
+Let’s check source code
+ 
+So let’s modify our link with action string, so we will see what we will need to do afterwards
+ 
+We got a hint that we need to use shell command
+So let’s use this one: -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec="ls -la "
+/dev/null /dev/null: These are special locations in the computer's memory where data can be discarded.
+--checkpoint=1: This is a setting used by a specific program or script. It tells the program to create a checkpoint.
+--checkpoint-action=exec="ls -la ": This is another setting for the program. It tells the program what action to take when it reaches a checkpoint. In this case, the action is to run a command called ls -la, which lists all files, even hidden files because of “a”.
+ 
+Okay, it didn’t work for 100%
+But still we found a new folder in which we might have our flag
+So let’s check if we got our flag there with such command
+-cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec="cat enhjenhzZGN3YWRzYWRhc2Rhc3NhY2FzY2FzY2FzY2FjYWNzZHNhY2FzY2Fzc2FjY2Fz/flag"
+And here is our flag

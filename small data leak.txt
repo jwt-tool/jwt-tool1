@@ -1,0 +1,14 @@
+As a first step I registered
+
+Let’s change our URL with a part that we got as a hint (cyber edu)
+
+As it was said – we got smth wrong, BUT here we can see what kind of mistake we got – it’s sqlalchemy
+So let’s go to Kali Linux and use our sqlmap command there, but with some particular user
+
+sqlmap -u ([link]/user?id=1)
+
+--dbs
+
+--tables
+
+--columns

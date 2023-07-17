@@ -1,0 +1,9 @@
+Okay. We can make some input there
+Let’s start with checking source code
+
+Now we know that our flag is inside flag.php
+Let’s try to input our own url and get flag from there
+
+So to get our link I used such website as interacts and my link was generated there
+
+Afterwards I added port and /php, because our flag is hidden in php and afterwards I gave such command as –post-file so website will send me their flag 

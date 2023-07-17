@@ -1,0 +1,19 @@
+Okay, we can do some input in this website. Lets input some URL
+ 
+ 
+Internal error. Let’s try to put location, instead of URL
+ 
+ 
+By looking at the end of this response we can understand, that we got such user as ‘ctf’ and we got such directory as /home/ctf
+So let’s use burp suite to find some more information we need
+In response we see that this website is written in Python
+ 
+So as we know that it is written in python, so let’s try to open a directory, but with app.py
+Let’s send it to a repeater so it will be easier for us 
+ 
+We need to change URL in a repeater as we already now which folder we need
+ 
+So here is our response 
+ 
+ 
+Now let’s change our host to this one, that is written here

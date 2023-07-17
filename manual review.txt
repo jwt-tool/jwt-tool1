@@ -1,0 +1,21 @@
+Firstly we need to register
+ 
+We can leave message for admins, let’s text them smth
+ 
+Okay, works as usual, but what if we will write a command instead of message?
+ 
+As we can see this website is written in JS so let’s try to check for javascript injection
+I have written such code 
+<script>
+alert(1);
+</script>
+ 
+Something new, so now we know that our JS script executed successfully so now we can try to do something to get our flag
+Let’s try to write such script, that will make them send flag to us
+So for that lets go to interacts, where we will see packages from a server and let’s write such script that will make this website enter to our server
+ 
+So we got our domain here
+Let’s put it inside script
+ 
+This is my script and let’s submit it
+And here is our flag

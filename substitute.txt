@@ -1,0 +1,13 @@
+So we already now what we need to do – we need to replace admin
+As a hint we got source code
+ 
+So we can see preg_replace() and if it is implemented in the wrong way – it may cause to remote code execution and we got such case here, so we can change something and execute it from our place.
+So let’s change URL and use replace
+
+[link]/index.php?vector-/Admin/e&replace=system('ls -l')
+ 
+So here we changed ‘Admin’ to a command ‘ls -l’ so we will see what we got there 
+ 
+So now we see the name of path, now let’s get there with adding ‘cat’ command
+ 
+And here is our flag

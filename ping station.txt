@@ -1,0 +1,5 @@
+As a first step – let’s analysis a code that we got as a hint
+
+By looking at it we can make such conclusion – this website got an input vulnerability, but still got a defense, but really weak one. This algorithm just checks if in our input we have an ip address and nothing more, so we can input any kind of ip address and after it write a command ‘cat flag’ to get our flag
+
+answer
